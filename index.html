@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página educativa sobre servidores de Internet: concepto, funcionamiento, tipos y características.">
+  <title>Servidores de Internet | Semana 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="brand-icon">SI</span><span>Servidores<span class="brand-light"> de Internet</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#concepto">Concepto</a></li>
+        <li><a href="#funcionamiento">Funcionamiento</a></li>
+        <li><a href="#tipos">Tipos</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+      </ul>
+    </nav>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">ARQUITECTURA DE LA INFORMACIÓN · SEMANA 3</p>
+        <h1>Servidores de <span>Internet</span></h1>
+        <p class="hero-text">Conoce qué es un servidor, cómo responde a las solicitudes de los usuarios y cuáles son sus principales tipos y características.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#concepto">Explorar contenido <span aria-hidden="true">→</span></a>
+          <a class="button button-outline" href="#funcionamiento">Ver cómo funciona</a>
+        </div>
+      </div>
+      <div class="server-art" aria-label="Ilustración representativa de un servidor">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="server-stack">
+          <div class="server-unit"><span class="slot"></span><span class="light-dot"></span><span class="light-dot"></span></div>
+          <div class="server-unit"><span class="slot"></span><span class="light-dot"></span><span class="light-dot"></span></div>
+          <div class="server-unit"><span class="slot"></span><span class="light-dot"></span><span class="light-dot"></span></div>
+        </div>
+        <span class="floating-tag tag-top">HTTP / HTTPS</span>
+        <span class="floating-tag tag-bottom">Cliente ↔ Servidor</span>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section container" id="concepto">
+      <div class="section-heading">
+        <p class="eyebrow">01 · CONCEPTO</p>
+        <h2>¿Qué es un servidor?</h2>
+        <p>Un servidor es un sistema compuesto por hardware y software que almacena y distribuye contenido o servicios a otros equipos.</p>
+      </div>
+      <div class="definition-card">
+        <div class="definition-symbol">⌘</div>
+        <div>
+          <h3>Atiende solicitudes de los clientes</h3>
+          <p>Cuando una persona abre una página web o utiliza una aplicación, su navegador o aplicación solicita información. El servidor procesa la petición y devuelve el contenido solicitado mediante protocolos como HTTP.</p>
+        </div>
+      </div>
+      <div class="two-column">
+        <article class="info-card">
+          <div class="card-icon">▣</div>
+          <h3>Hardware</h3>
+          <p>Es la parte física que aloja los servicios, por ejemplo, el procesador, la memoria RAM y el almacenamiento.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">⌘</div>
+          <h3>Software</h3>
+          <p>Son los programas que gestionan las solicitudes y entregan el contenido, como Apache, Nginx o Microsoft IIS.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="funcionamiento">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 · PROCESO</p>
+          <h2>¿Cómo funciona?</h2>
+          <p>La comunicación básica entre un cliente y un servidor se puede resumir en tres pasos.</p>
+        </div>
+        <div class="steps">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon">⌕</div>
+            <h3>Solicitud del cliente</h3>
+            <p>El usuario escribe una dirección o selecciona un enlace desde su navegador.</p>
+          </article>
+          <div class="step-arrow" aria-hidden="true">→</div>
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon">⚙</div>
+            <h3>Procesamiento</h3>
+            <p>El servidor recibe la petición y determina qué recurso o información debe entregar.</p>
+          </article>
+          <div class="step-arrow" aria-hidden="true">→</div>
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon">▤</div>
+            <h3>Entrega del contenido</h3>
+            <p>El servidor envía los archivos o datos y el navegador los muestra al usuario.</p>
+          </article>
+        </div>
+        <div class="example-note"><strong>Ejemplo cotidiano:</strong> al entrar a una página web, el navegador actúa como cliente, solicita la información y el servidor se la entrega.</div>
+      </div>
+    </section>
+
+    <section class="section container" id="tipos">
+      <div class="section-heading">
+        <p class="eyebrow">03 · CLASIFICACIÓN</p>
+        <h2>Tipos de servidores</h2>
+        <p>Cada tipo de servidor cumple una función específica dentro de una red.</p>
+      </div>
+      <div class="type-grid">
+        <article class="type-card">
+          <div class="type-icon blue">⌘</div><h3>Servidor web</h3>
+          <p>Almacena y entrega páginas web, atendiendo solicitudes HTTP de los navegadores.</p><span class="type-label">Páginas y sitios web</span>
+        </article>
+        <article class="type-card">
+          <div class="type-icon violet">✉</div><h3>Servidor de correo</h3>
+          <p>Gestiona el envío y la recepción de mensajes de correo electrónico mediante protocolos como SMTP.</p><span class="type-label">Correo electrónico</span>
+        </article>
+        <article class="type-card">
+          <div class="type-icon teal">⇄</div><h3>Servidor de archivos (FTP)</h3>
+          <p>Permite transferir archivos entre equipos y usuarios conectados a la red.</p><span class="type-label">Transferencia de archivos</span>
+        </article>
+        <article class="type-card">
+          <div class="type-icon amber">◎</div><h3>Servidor DNS</h3>
+          <p>Traduce nombres de dominio, como www.google.com, a direcciones IP que los equipos pueden utilizar.</p><span class="type-label">Nombres de dominio</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="caracteristicas">
+      <div class="container">
+        <div class="section-heading heading-light">
+          <p class="eyebrow">04 · RENDIMIENTO</p>
+          <h2>Características principales</h2>
+          <p>La capacidad de respuesta de un servidor depende de varios recursos y medidas de protección.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-number">01</span><div><h3>Procesador (CPU)</h3><p>Permite ejecutar tareas y atender solicitudes de forma simultánea.</p></div></article>
+          <article class="feature"><span class="feature-number">02</span><div><h3>Memoria RAM</h3><p>Ayuda a ejecutar procesos y manejar datos temporalmente con rapidez.</p></div></article>
+          <article class="feature"><span class="feature-number">03</span><div><h3>Almacenamiento</h3><p>Los discos HDD y SSD guardan archivos, aplicaciones y datos; los SSD suelen ser más rápidos.</p></div></article>
+          <article class="feature"><span class="feature-number">04</span><div><h3>Conexión de red</h3><p>La velocidad de conexión influye en la rapidez con que se intercambia la información.</p></div></article>
+          <article class="feature"><span class="feature-number">05</span><div><h3>Seguridad</h3><p>Los firewalls, el cifrado y otros controles ayudan a prevenir accesos no autorizados.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="resumen">
+      <div class="summary-panel">
+        <div>
+          <p class="eyebrow">IDEA CLAVE</p>
+          <h2>Los servidores hacen posible muchos servicios de Internet.</h2>
+          <p>Reciben solicitudes, procesan información y responden a los clientes. Su hardware, software, conectividad y seguridad contribuyen a que los servicios funcionen de manera eficiente.</p>
+        </div>
+        <a href="#inicio" class="button button-primary">Volver al inicio ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Servidores de Internet</strong><p>Material educativo · Arquitectura de la Información · Semana 3</p></div>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
